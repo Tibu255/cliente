@@ -58,3 +58,57 @@ console.log("extVar:", extVar);
 console.log("intVar:", intVar);
 console.log("intLet:", intLet);
 
+/* CONVERSION DE TIPOS */ 
+
+let animal = "Águila"; // String
+let numPatas = 2; // Number
+console.log (animal + numPatas);
+// muestra Águila2
+
+console.log();
+console.log();
+
+/**
+ * ▪ Boolean(valor): convierte el valor booleano.
+ * ▪ String(valor): convierte el valor en una cadena de texto. Otra opción es realizar una
+ * concatenación del valor con una cadena vacía.
+ * ▪ Number(valor): convierte el valor en un número. Si el valor no es válido, el resultado
+ * será NaN (no es un número).
+ * ▪ parseInt(valor): convierte el valor en un número entero, aunque se encuentre un
+ * separador decimal.
+ * ▪ parseFloat(valor): convierte el valor en un número real.
+ * 
+ */
+
+let cadena = "3.1415";
+let nombre = "42";
+let nom = "Joan";
+let aprobado = true;
+// Conversiones a booleano
+console.log(Boolean(cadena)); // true
+console.log(Boolean(0)); // false
+console.log(Boolean("")); // false
+console.log(Boolean(null)); // false
+console.log(Boolean(undefined)); // false
+// Conversiones a cadena
+console.log(String(nombre)); // "42"
+console.log(String(nombre) + nombre); // "4242"
+console.log(String(aprobado)); // "true"
+// Conversiones a números
+console.log(Number(nom)); // NaN, no es un número
+console.log(Number(cadena) * 2); // 6.283
+console.log(Number(aprobado)); // 1
+console.log(parseInt(cadena)); // 3
+console.log(parseFloat(cadena)); // 3.1415
+
+
+/* LITERALES*/
+
+/**
+ * Esto es el uso ``que con esas comillas podemos introducir código js dentro de la cadena
+ * ejemplo abajo
+ */
+
+const libs = ["React", "Vue", "Angular"];
+console.log(`Este curso trata de ${libs[0]}`);
+
