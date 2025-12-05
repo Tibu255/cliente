@@ -47,7 +47,7 @@ if (true) {
 let intLet = 1;
 var intVar = 1;
 console.log("Dentro del bloque");
-console.log("extLet:", extLet);
+//console.log("extLet:", extLet);
 console.log("extVar:", extVar);
 console.log("intLet:", intLet);
 console.log("intVar:", intVar);
@@ -56,7 +56,7 @@ console.log("Fuera del bloque");
 console.log("extLet:", extLet);
 console.log("extVar:", extVar);
 console.log("intVar:", intVar);
-console.log("intLet:", intLet);
+//console.log("intLet:", intLet);
 
 /* CONVERSION DE TIPOS */ 
 
@@ -111,4 +111,61 @@ console.log(parseFloat(cadena)); // 3.1415
 
 const libs = ["React", "Vue", "Angular"];
 console.log(`Este curso trata de ${libs[0]}`);
+
+console.log();
+console.log();
+
+
+const l = libs.length;
+console.log(`
+${l > 2 ? `Estas ${l} bibliotecas` : "Esta biblioteca"}:
+${libs.join(", ")}
+`);
+
+
+/**
+ * OPERADORES LOGICOS:
+ * + SUMA
+ * - RESTA
+ * * MULTIPLICACION 
+ * / DIVISION
+ * % RESTO
+ * ++ INCREMENTO DE 1
+ * -- DECREMENTO DE 1
+ * =  X = Y
+ * += X = X+Y
+ * -= X = X-Y
+ * *= X = X*Y
+ * /= X = X/Y
+ * %= X = X%Y
+ * == IGUAL QUE
+ * === IGUAL A VALOR O TIPO
+ * != DISTINTO QUE
+ * !== DISTINTO VALOR O DISTINTO TIPO
+ * > MAYOR QUE
+ * < MENOR QUE
+ * >= MAYOR O IGUAL QUE
+ * <= MENOR O IGUAL QUE
+ * ? OPERADOR TERNIARIO
+ * ?? COALSENCIA NULA
+ * || OR LOGICO 
+ * && AND LOGICO
+ * ||= ASIGNACION X =X || Y
+ * &&= ASIGNACION X=X && Y
+ * ??= ASIGANCION X=X ?? Y
+ */
+
+/*Para  comparar sin diferneciacion de mayusculas y minusculas*/
+if ("JavaScript".toLowerCase() == "javascript".toLowerCase());
+if ("JavaScript".toUpperCase() == "javascript".toUpperCase());
+
+/**
+ *  LOCALE COMPARE
+ * Esto hace me diga cuantos caracteres son iguales y cuantos no
+ * pertence a String
+ */
+
+console.log("cote".localeCompare("còte")); //Devuelve -1
+
+
 
