@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* MODELO CLASICO FUNCION*/
+
+        function doblar(a){
+        return a * 2;
+        }
+
+        /* FUNCIONES ARROW: Son funciones que estan expresadas mediante expresiones Lambda
+        */
+        
+        const sumar = (a, b) => a + b;
+        const factorial = a => {
+            if (a <= 1){
+                return 1;
+            }
+            return a * factorial(a -1);
+            }
+
+            document.writeln("doblar ", doblar(2));
+            document.writeln("sumar ", sumar(1,2));
+            document.writeln("factorial ", factorial(2));
+    </script>
+</body>
+</html>

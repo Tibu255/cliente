@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /**
+         * decodeURI() Decodifica los caracteres especiales de una URL excepto: , / ? : @ & = + $ #
+         * decodeURIComponent() Decodifica todos los caracteres especiales de una URL.
+         * encodeURI() Codifica los caracteres especiales de una URL excepto: , / ? : @ & = + $ #
+         * encodeURIComponent() Codifica todos los caracteres especiales de una URL.
+         * eval() Evalúa una cadena y la ejecuta si contiene código u operaciones.
+         * isFinite() Determina si un valor es un número finito válido.
+         * isNaN() Determina cuando un valor no es un número.
+         * Number() Convierte el valor de un objeto a un número.
+         * parseFloat() Convierte una cadena a un número real.
+         * parseInt() Convierte una cadena a un entero.
+         * regExp() Crea un objeto 'expresión regular' para encontrar texto de acuerdo a un patrón
+        */
+
+        eval("x=50;y=30;document.write(x*y)"); // Muestra 1500
+        document.write("<br>", eval("8+6")); // Muestra 14
+        document.write("<br>", eval(x+30)); // Muestra 80
+    </script>
+</body>
+</html>
